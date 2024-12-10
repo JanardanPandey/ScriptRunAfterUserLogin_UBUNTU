@@ -1,0 +1,24 @@
+
+**If you're using a desktop environment and want the script to run upon GUI login:**
+
+**Create a .desktop entry:**
+
+## Create A desktop File 
+nano ~/.config/autostart/stockselector.desktop
+## Add the following content:
+
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/python3 /home/janardan/StockScrappingProject/StockSelectorStartUpScript.py
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Stock Selector Script
+Comment=Run stock selector script on login
+
+
+## Save the file and restart your session.
+
+Exec is the file to start the script
+
+
